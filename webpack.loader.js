@@ -52,12 +52,12 @@ module.exports = {
                 loader: 'cache-loader'
             },
             {
+                loader: path.resolve(__dirname, 'angular-url-loader')
+            },
+            {
                 // Instrument TS files with istanbul-lib-instrument for subsequent code coverage reporting
                 loader: 'istanbul-instrumenter-loader',
                 options: { esModules: true }
-            },
-            {
-                loader: path.resolve(__dirname, 'angular-url-loader')
             },
             {
                 loader: 'ts-loader'
@@ -104,12 +104,12 @@ module.exports = {
                 loader: 'cache-loader'
             },
             {
+                loader: path.resolve(__dirname, 'angular-url-loader')
+            },
+            {
                 // Instrument JS files with istanbul-lib-instrument for subsequent code coverage reporting
                 loader: 'istanbul-instrumenter-loader',
                 options: {esModules: true}
-            },
-            {
-                loader: path.resolve(__dirname, 'angular-url-loader')
             },
             {
                 loader: 'babel-loader',
